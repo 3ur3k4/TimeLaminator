@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import AppLayout from './components/layout/AppLayout.vue'
+import UpdateToast from './components/common/UpdateToast.vue'
 import ProjectSettingsPanel from './components/panels/ProjectSettingsPanel.vue'
 import PropertyControlsPanel from './components/panels/PropertyControlsPanel.vue'
 import ThreeViewport from './components/preview/ThreeViewport.vue'
@@ -95,6 +96,8 @@ const onProjectFileChange = async (event: Event) => {
     style="display: none"
     @change="onProjectFileChange"
   />
+
+  <UpdateToast />
 </template>
 
 <style scoped>
