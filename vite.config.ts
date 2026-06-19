@@ -9,7 +9,7 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'prompt',
-      includeAssets: ['favicon.svg', 'icons.svg'],
+      includeAssets: ['icons.svg'],
       manifest: {
         name: 'TimeLaminator',
         short_name: 'TimeLaminator',
