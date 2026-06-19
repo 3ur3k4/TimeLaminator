@@ -24,6 +24,14 @@ export default defineConfig({
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
           { src: 'icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
+        screenshots: [
+          {
+            src: 'screenshots/desktop.png',
+            sizes: '2880x1560',
+            type: 'image/png',
+            form_factor: 'wide',
+          },
+        ],
       },
       workbox: {
         // App shell + same-origin static assets (meshoptimizer's WASM is
